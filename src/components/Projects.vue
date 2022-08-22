@@ -42,7 +42,7 @@ const loadProjects = () => {
         { 
             id: 1, name : 'E-commerce Site', 
             description : 'E-commerce Website. A website that allows people to easily purchase their clothing needs. ',
-            image : '/src/assets/img/etto-eccomerce.png',
+            image : '/img/etto-eccomerce.png',
             technologies : ['Laravel', 'Javascript'],
             repository : 'https://github.com/jandales/CodaStore', 
             link : 'https://codastore.herokuapp.com' },
@@ -50,7 +50,7 @@ const loadProjects = () => {
         { 
             id: 2, name : 'Lending Management System',  
             description : "The Lending Management System's main goal is to manage and monitor borrower loans.",
-            image : '/src/assets/img/lending.png', 
+            image : '/img/lending.png', 
             technologies : ['Laravel', 'Vue js', 'TailwindCss'],
             repository : 'https://github.com/jandales/lending-app',
             link : 'https://codastore.herokuapp.com' },
@@ -58,7 +58,7 @@ const loadProjects = () => {
         {   id: 3, name :  'Taskboard App' ,
             description : 'The Taskboard app is a clone of Taskboard for Google tasks.',
             technologies : ['Vue js', 'Vuex', 'TailwindCss'],
-            image : '/src/assets/img/task.png',
+            image : '/img/task.png',
             repository : 'https://github.com/jandales/task-app',
             link : 'https://jandales.github.io/task-app'
         }
