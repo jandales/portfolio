@@ -20,7 +20,7 @@
                     </ul>
                 </div>
                 <div class="hidden lg:block w-1/2 shadow-lg">
-                    <img :src="project.image" class="w-full h-full bg-[red] backdrop-blur-sm hover:backdrop-blur-lg transition-all duration-1000 ease-in-out " alt="">
+                    <img :src="project.image" class="w-full h-full  backdrop-blur-sm hover:backdrop-blur-lg transition-all duration-1000 ease-in-out " alt="">
                 </div>
                 </div>
             </div>
