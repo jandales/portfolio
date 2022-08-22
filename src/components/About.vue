@@ -117,6 +117,6 @@
 <script setup>
 import { ref } from 'vue';
 
-const avatar = ref('/src/assets/avatar.jpg');
-const resume = ref('/src/assets/resume.pdf')
+const avatar = ref('/avatar.jpg');
+const resume = ref('/resume.pdf')
 </script>
