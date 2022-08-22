@@ -1,0 +1,122 @@
+<template>
+<transition  name="list" appear>
+     <section id="about" class="page-wrapper pt-28">
+        <h2 class="text-center text-[2rem] font-bold capitalize pb-8">About Me</h2>
+        <div class="flex flex-col lg:flex-row mt-8">
+            <div class="w-full px-8 lg:w-1/2 lg:p-0">
+                <div class="flex mb-4">               
+                 Hey! I'm Jesus Andales, an entry-level web developer. 
+                 I started my IT career back in 2013 as a computer technician. I specialized in troubleshooting hardware, software, and networks in 5 years.                                  
+                </div>               
+                <div class="flex  mb-4 ">
+                   Fast forward to 2019, I decided to pursue my career in web development, so I taught myself to program, especially in PHP programming.
+                </div>
+                 <div class="mb-4 ">
+                    <h3 class="block py-4 font-bold tracking-wider">EDUCATION</h3>
+                    <div class="flex">
+                    <ul class="w-full">
+                        <li class="flex items-center text-sm py-1">
+                             <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            Degree in Brand Communications
+                        </li>
+                        <li class="flex items-center text-sm py-1">
+                            <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            Computer Server and Servicing
+                        </li>                    
+                    </ul>                  
+                    </div>
+                </div>
+                 <div class="mb-4 ">
+                    <h3 class="block py-4 font-bold tracking-wider">EXPERIENCE</h3>
+                    <div class="flex">
+                    <ul class="w-full">
+                        <li class="flex items-center text-sm py-1">
+                             <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            Degree in Brand Communications
+                        </li>
+                        <li class="flex items-center text-sm py-1">
+                            <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                             5 years experience in IT Support / Computer Technician
+                        </li>                    
+                    </ul>                  
+                    </div>
+                </div>
+                <div class="mb-4 ">
+                    <h3 class="block py-4 font-bold tracking-wider">SKILLS</h3>
+                    <div class="flex">
+                    <ul class="w-28">
+                        <li class="flex items-center text-sm py-1">
+                            <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                             Php
+                        </li>
+                        <li class="flex items-center text-sm py-1">
+                             <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            C#
+                        </li>
+                        <li class="flex items-center text-sm py-1">
+                            <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            Javascript
+                        </li>
+                    </ul>
+                     <ul>
+                        <li class="flex items-center text-sm py-1">
+                            <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            Laravel
+                        </li>
+                        <li class="flex items-center text-sm py-1">
+                            <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            Vue Js
+                        </li>
+                        <li class="flex items-center text-sm py-1">
+                             <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            Tailwind CSS
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                       <a :href="resume" download class="button ">My Resume</a>
+                </div>
+               
+            </div>
+              <div class="w-full pt-8 lg:pt-0 lg:w-1/2 flex justify-center ">
+                <div class="mx-auto relative w-[300px] h-[300px] md:mx-0 rounded-md  overflow-hidden"> 
+                    <img :src="avatar" class="" alt="">
+                    
+                </div>
+              </div>
+
+        </div>
+
+    </section>
+</transition>
+   
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const avatar = ref('/src/assets/avatar.jpg');
+const resume = ref('/src/assets/resume.pdf')
+</script>

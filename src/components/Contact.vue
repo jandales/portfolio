@@ -1,0 +1,26 @@
+<template>
+    <transition name="list" appear>
+        <section id="contact" class="page-wrapper !min-h-[calc(100vh_-_56px)]">
+            <h1 class="block text-[4rem] font-black leading-[5rem] text-center py-20">Get In Touch</h1>
+            <div class="flex flex-col items-center justify-center">
+                <ul>
+                    <li class="block text-center text-2xl mb-8">jesusandales021993@gmail.com</li>
+                    <li class="block text-center text-2xl mb-8"> 09565722152</li>
+                </ul>
+                <a href="mailto:jesusandales021993.com" class="button">
+                    Contact Me
+                </a>
+            </div>
+            <span @click="scrollToElement('home')" class="group absolute bottom-0 right-0 bg-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-[orange]" >
+                <font-awesome-icon icon="fa-solid fa-arrow-up" class="text-[2rem] text-[orange] group-hover:text-white" />
+            </span>
+        </section>
+    </transition>
+</template>
+<script setup>
+const  scrollToElement = (refName)  => {    
+      const el = document.getElementById(refName);
+       el.scrollIntoView({behavior : "smooth"})
+}
+</script>
+
