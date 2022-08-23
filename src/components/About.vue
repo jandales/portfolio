@@ -95,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="mt-8">
+                 <div class="mt-8 flex justify-center lg:justify-start">
                        <a :href="resume" download class="button ">My Resume</a>
                 </div>
                
