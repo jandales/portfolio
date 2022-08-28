@@ -53,7 +53,7 @@ const loadProjects = () => {
             image : '/img/lending.png', 
             technologies : ['Laravel', 'Vue js', 'TailwindCss'],
             repository : 'https://github.com/jandales/lending-app',
-            link : 'https://codastore.herokuapp.com' },
+            link : 'https://etto-lending-app.herokuapp.com/' },
 
         {   id: 3, name :  'Taskboard App' ,
             description : 'The Taskboard app is a clone of Taskboard for Google tasks.',
