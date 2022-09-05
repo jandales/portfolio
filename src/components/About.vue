@@ -6,10 +6,10 @@
             <div class="w-full px-8 lg:w-1/2 lg:p-0">
                 <div class="flex mb-4">               
                  Hey! I'm Jesus Andales, an entry-level web developer. 
-                 I started my IT career back in 2013 as a computer technician. I specialized in troubleshooting hardware, software, and networks in 5 years.                                  
+                 I started my IT career back in 2013 as a computer technician. I specialized on troubleshooting hardware, software, and networks in 5 years.                                  
                 </div>               
                 <div class="flex  mb-4 ">
-                   Fast forward to 2019, I decided to pursue my career in web development, so I taught myself to program, especially in PHP programming.
+                   Fast forward to 2019, I decided to pursue my career in web development, I taught myself to program, especially in PHP programming.
                 </div>
                  <div class="mb-4 ">
                     <h3 class="block py-4 font-bold tracking-wider">EDUCATION</h3>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="mb-4 ">
                     <h3 class="block py-4 font-bold tracking-wider">SKILLS</h3>
-                    <div class="flex">
+                    <div class="flex gap-8">
                     <ul class="w-28">
                         <li class="flex items-center text-sm py-1">
                             <span class="text-xs mr-3">
@@ -90,6 +90,34 @@
                                 <font-awesome-icon icon="fa-solid fa-caret-right" />
                             </span>
                             Tailwind CSS
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="flex items-center text-sm py-1">
+                            <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            NodeJs
+                        </li>
+                        <li class="flex items-center text-sm py-1">
+                            <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            MongoDB
+                        </li>
+                        <li class="flex items-center text-sm py-1">
+                             <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            MySql
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="flex items-center text-sm py-1">
+                             <span class="text-xs mr-3">
+                                <font-awesome-icon icon="fa-solid fa-caret-right" />
+                            </span>
+                            Bootstrap
                         </li>
                     </ul>
                     </div>
