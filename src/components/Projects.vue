@@ -2,7 +2,7 @@
 <section id="projects" class="page-wrapper  py-14 px-8 lg:px-0">
     <h1 class="block text-center text-[2rem] font-bold  py-16 ">Personal Projects</h1>
     <div class="w-full flex flex-wrap gap-16 lg:gap-4 ">
-        <transition-group name="list" appear>
+    
             <div  v-for="project in projects" :key="project.id" class="p-6 w-full bg-light-dark border-[dark]  rounded-sm shadow-lg lg:bg-transparent lg:min-h-screen lg:border-0 lg:p-6 lg:shadow-none">        
                 <div class="flex lg:gap-8" :class="{'flex-row-reverse' : isEven(project.id)}"> 
                     <div class="w-full lg:w-1/2" >
@@ -24,7 +24,7 @@
                 </div>
                 </div>
             </div>
-        </transition-group>
+       
     </div>
 </section>
 </template>

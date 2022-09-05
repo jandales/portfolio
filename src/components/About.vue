@@ -1,5 +1,5 @@
 <template>
-<transition  name="list" appear>
+
      <section id="about" class="page-wrapper pt-28">
         <h2 class="text-center text-[2rem] font-bold capitalize pb-8">About Me</h2>
         <div class="flex flex-col lg:flex-row mt-8">
@@ -110,7 +110,7 @@
         </div>
 
     </section>
-</transition>
+
    
 </template>
 

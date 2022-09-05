@@ -1,8 +1,7 @@
 <template>
     <section class="page-wrapper px-8 !min-h-[calc(100vh_-_100px)] flex  items-center mx-auto">
         <div class="w-full pt-5 lg:pt-0">
-
-            <TransitionGroup name="list" tag="div" appear="">
+          
 
                  <div class="block" :key="1">
                     <h1 class="text-base font-semibold">Hi, my name is</h1>
@@ -21,7 +20,7 @@
                 </div>
                 
 
-            </TransitionGroup>
+      
           
         </div>
        

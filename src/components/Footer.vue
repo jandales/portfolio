@@ -1,5 +1,5 @@
 <template>
-    <transition name="list" appear>
+  
         <section id="footer" class=" w-full text-center h-14">
             <div class="relative">
                 <ul class="flex gap-4  items-center justify-center">
@@ -11,6 +11,6 @@
             </div>
             <div class="pt-4 pb-8 max-w-max mx-auto  text-sm cursor-pointer hover:text-[orange]">Designed & Built by Jesus Andales</div>
         </section>
-    </transition>
+  
 </template>
 <script setup></script>

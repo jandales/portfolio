@@ -1,5 +1,5 @@
 <template>
-    <transition name="list" appear>
+
         <section id="contact" class="page-wrapper !min-h-[calc(100vh_-_56px)]">
             <h1 class="block text-[3rem] lg:text-[4rem] font-black leading-[5rem] text-center py-20">Get In Touch</h1>
             <div class="flex flex-col items-center justify-center">
@@ -15,7 +15,7 @@
                 <font-awesome-icon icon="fa-solid fa-arrow-up" class="text-[2rem] text-[orange] group-hover:text-white" />
             </span>
         </section>
-    </transition>
+
 </template>
 <script setup>
 const  scrollToElement = (refName)  => {    
