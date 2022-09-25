@@ -4,7 +4,7 @@
           
 
                  <div class="block" :key="1">
-                    <h1 class="text-base font-semibold mb-2 mt-4 md:mt-0 md:mb-0">Hi, my name is</h1>
+                    <h1 class="text-base md:text-lg font-semibold mb-2 mt-4 md:mt-0 md:mb-0">Hi, my name is</h1>
                  </div>
            
                  <div class="block" :key="2">

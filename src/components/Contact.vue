@@ -1,7 +1,7 @@
 <template>
 
         <section id="contact" class="page-wrapper !min-h-[calc(100vh_-_56px)]">
-            <h1 class="block text-[3rem] lg:text-[4rem] font-black leading-[5rem] text-center py-20">Get In Touch</h1>
+            <h1 class="block text-[3rem] font-black leading-[5rem] text-center py-20">Get In Touch</h1>
             <div class="flex flex-col items-center justify-center">
                 <ul>
                     <li class="block text-center text-lg lg:text-2xl mb-8">jesusandales021993@gmail.com</li>

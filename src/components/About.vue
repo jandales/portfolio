@@ -19,7 +19,7 @@
                              <span class="text-xs mr-3">
                                 <font-awesome-icon icon="fa-solid fa-caret-right" />
                             </span>
-                            Degree in Brand Communications
+                            Bachelor of Science in Computer Science
                         </li>
                         <li class="flex items-center text-sm py-1">
                             <span class="text-xs mr-3">
@@ -38,13 +38,13 @@
                              <span class="text-xs mr-3">
                                 <font-awesome-icon icon="fa-solid fa-caret-right" />
                             </span>
-                            Degree in Brand Communications
+                            PTO COMPUTER SALES
                         </li>
-                        <li class="flex items-center text-sm py-1">
-                            <span class="text-xs mr-3">
-                                <font-awesome-icon icon="fa-solid fa-caret-right" />
-                            </span>
-                             5 years experience in IT Support / Computer Technician
+                        <li class="flex items-center text-sm py-1 ml-4">                           
+                            <p>Computer Technician / IT Support</p>   
+                        </li> 
+                        <li class="flex items-center text-sm py-1 ml-4">                           
+                            <p>5 years experience</p>   
                         </li>                    
                     </ul>                  
                     </div>
