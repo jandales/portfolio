@@ -1,7 +1,7 @@
 <template>
 
-     <section id="about" class="page-wrapper pt-28">
-        <h2 class="text-center text-[2rem] font-bold capitalize pb-8">About Me</h2>
+     <section id="about" class="page-wrapper">
+        <h2 class="text-center text-[2rem] font-bold capitalize py-12">About Me</h2>
         <div class="flex flex-col lg:flex-row mt-8">
             <div class="w-full px-8 lg:w-1/2 lg:p-0">
                 <div class="flex mb-4">               

@@ -56,7 +56,7 @@ const toggleMenu  = () =>  {
 
 const  scrollToElement = (refName)  => {    
       const el = document.getElementById(refName);
-       el.scrollIntoView({behavior : "smooth"})
+       el.scrollIntoView({behavior : "smooth",  block: 'start'})
        isMenuOpen.value =  false;
 }
 

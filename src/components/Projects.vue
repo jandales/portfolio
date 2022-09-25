@@ -1,7 +1,7 @@
 <template>
-<section id="projects" class="page-wrapper  py-14 px-8 lg:px-0">
-    <h1 class="block text-center text-[2rem] font-bold  py-16 ">Personal Projects</h1>
-    <div class="w-full flex flex-wrap gap-16 lg:gap-4 ">
+<section id="projects" class="page-wrapper">
+    <h1 class="block text-center text-[2rem] font-bold  py-14">Personal Projects</h1>
+    <div class="w-full flex flex-wrap gap-16 px-4 md:px-0 lg:gap-4 ">
     
             <div  v-for="project in projects" :key="project.id" class="p-6 w-full bg-light-dark border-[dark]  rounded-sm shadow-lg lg:bg-transparent lg:min-h-screen lg:border-0 lg:p-6 lg:shadow-none">        
                 <div class="flex lg:gap-8" :class="{'flex-row-reverse' : isEven(project.id)}"> 
@@ -41,7 +41,7 @@ const loadProjects = () => {
 
         { 
             id: 1, name : 'E-commerce Site', 
-            description : 'E-commerce Website. A website that allows people to easily purchase their clothing needs. ',
+            description : "E-commerce Website. A website that allows customer's to easily purchase their clothing needs. ",
             image : '/img/etto-eccomerce.png',
             technologies : ['Laravel', 'Javascript'],
             repository : 'https://github.com/jandales/CodaStore', 
