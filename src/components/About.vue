@@ -3,7 +3,7 @@
      <section id="about" class="page-wrapper">
         <h2 class="text-center text-[2rem] font-bold capitalize py-12">About Me</h2>
         <div class="flex flex-col lg:flex-row mt-8">
-            <div class="w-full px-8 lg:w-1/2 lg:p-0">
+            <div class="w-full  px-8 lg:w-1/2 lg:p-0">
                 <div class="flex mb-4">               
                  Hey! I'm Jesus Andales, an entry-level web developer. 
                  I started my IT career back in 2013 as a computer technician. I specialized on troubleshooting hardware, software, and networks in 5 years.                                  
@@ -38,7 +38,7 @@
                              <span class="text-xs mr-3">
                                 <font-awesome-icon icon="fa-solid fa-caret-right" />
                             </span>
-                            PTO COMPUTER SALES
+                            PTO COMPUTER SALES AND SERVICES
                         </li>
                         <li class="flex items-center text-sm py-1 ml-4">                           
                             <p>Computer Technician / IT Support</p>   
@@ -51,8 +51,8 @@
                 </div>
                 <div class="mb-4 ">
                     <h3 class="block py-4 font-bold tracking-wider">SKILLS</h3>
-                    <div class="flex gap-8">
-                    <ul class="w-28">
+                    <div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8">
+                    <ul class="w-[calc(((100%_+_1rem)_/_2)_-_1rem)] md:w-1/4">
                         <li class="flex items-center text-sm py-1">
                             <span class="text-xs mr-3">
                                 <font-awesome-icon icon="fa-solid fa-caret-right" />
@@ -72,7 +72,7 @@
                             Javascript
                         </li>
                     </ul>
-                     <ul>
+                     <ul class="w-[calc(((100%_+_1rem)_/_2)_-_1rem)] md:w-1/4">
                         <li class="flex items-center text-sm py-1">
                             <span class="text-xs mr-3">
                                 <font-awesome-icon icon="fa-solid fa-caret-right" />
@@ -92,7 +92,7 @@
                             Tailwind CSS
                         </li>
                     </ul>
-                    <ul>
+                    <ul class="w-[calc(((100%_+_1rem)_/_2)_-_1rem)] md:w-1/4">
                         <li class="flex items-center text-sm py-1">
                             <span class="text-xs mr-3">
                                 <font-awesome-icon icon="fa-solid fa-caret-right" />
@@ -112,7 +112,7 @@
                             MySql
                         </li>
                     </ul>
-                    <ul>
+                    <ul class="w-[calc(((100%_+_1rem)_/_2)_-_1rem)] md:w-1/4">
                         <li class="flex items-center text-sm py-1">
                              <span class="text-xs mr-3">
                                 <font-awesome-icon icon="fa-solid fa-caret-right" />
@@ -128,12 +128,11 @@
                 </div>
                
             </div>
-              <div class="w-full pt-8 lg:pt-0 lg:w-1/2 flex justify-center ">
+            <div class="w-full pt-8 lg:pt-0 lg:w-1/2 flex justify-center ">
                 <div class="mx-auto relative w-[300px] h-[300px] md:mx-0 rounded-md  overflow-hidden"> 
-                    <img :src="avatar" class="" alt="">
-                    
+                    <img :src="avatar" class="" alt="">                    
                 </div>
-              </div>
+            </div>
 
         </div>
 
