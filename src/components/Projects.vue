@@ -3,7 +3,7 @@
     <h1 class="block text-center text-[2rem] font-bold  py-14">Personal Projects</h1>
     <div class="w-full flex flex-wrap gap-16 px-4 md:px-0 lg:gap-4 ">
     
-            <div  v-for="project in projects" :key="project.id" class="p-6 w-full bg-light-dark border-[dark]  rounded-sm shadow-lg lg:bg-transparent lg:min-h-screen lg:border-0 lg:p-6 lg:shadow-none">        
+            <div v-scrollanimation  v-for="project in projects" :key="project.id" class="p-6 w-full bg-light-dark border-[dark]  rounded-sm shadow-lg lg:bg-transparent lg:min-h-screen lg:border-0 lg:p-6 lg:shadow-none">        
                 <div class="flex lg:gap-8" :class="{'flex-row-reverse' : isEven(project.id)}"> 
                     <div class="w-full lg:w-1/2" >
                         <h2 @click="externalLink(project.link)" class="!text-left text-[2rem] font-bold mb-3 hover:text-[orange] cursor-pointer" :class="{'lg:text-right' : isEven(project.id)}">{{project.name}}</h2>
@@ -42,7 +42,7 @@ const loadProjects = () => {
         { 
             id: 1, name : 'E-commerce Site', 
             description : "E-commerce Website. A website that allows customer's to easily purchase their clothing needs. ",
-            image : '/img/etto-eccomerce.png',
+            image : '/img/store.png',
             technologies : ['Laravel', 'Javascript'],
             repository : 'https://github.com/jandales/CodaStore', 
             link : 'https://codastore.herokuapp.com' },
@@ -58,9 +58,17 @@ const loadProjects = () => {
         {   id: 3, name :  'Taskboard App' ,
             description : 'The Taskboard app is a clone of Taskboard for Google tasks.',
             technologies : ['Vue js', 'Vuex', 'TailwindCss'],
-            image : '/img/task.png',
+            image : '/img/task1.png',
             repository : 'https://github.com/jandales/task-app',
             link : 'https://jandales.github.io/task-app'
+        },
+
+        {   id: 4, name :  'Recipe App' ,
+            description : 'Recipe app is sharing app, it allow user to share and save recipes from the app.',
+            technologies : ['Node Js', 'Express','MongoDB', 'Vue js', 'Vuex', 'TailwindCss'],
+            image : '/img/recipe.png',
+            repository : 'https://github.com/jandales/task-app',
+            link : 'https://etto-recipe-app.herokuapp.com'
         }
     ]
    

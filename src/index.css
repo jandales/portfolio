@@ -54,7 +54,7 @@ body{
     @apply bg-dark p-0;
 }
 .nav-item {
-    @apply  text-2xl  text-white focus:text-[orange] hover:text-[orange]  md:mr-8 md:mb-0 lg:text-sm md:flex md:items-center cursor-pointer;
+    @apply  text-2xl  text-white focus:text-[orange] hover:text-[orange]  md:mr-8 md:mb-0 lg:text-sm md:flex md:items-center cursor-pointer capitalize;
     
 }
 
