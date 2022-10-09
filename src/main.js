@@ -16,7 +16,6 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 app.directive('scrollanimation', (el) => {
     el.classList.add('before-enter')
     scrollAnimation.observe(el)
-
 })
 .use(router)
 .use(MotionPlugin)

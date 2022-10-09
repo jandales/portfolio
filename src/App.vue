@@ -29,11 +29,11 @@ const handleAnimation = () => {
     <div class="container relative mx-auto bg-dark text-white">
 
         <NavBar/>
-        <Hero/>
+        <!-- <Hero/> -->
         <About/>
         <Projects/>
         <Contact/>
-        <Footer/> 
+        <Footer/>
         
     </div> 
 </template>
