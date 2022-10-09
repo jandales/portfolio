@@ -3,7 +3,6 @@
         (entries, observer) => {
             entries.forEach( (entry)  => {
                 if(entry.isIntersecting){
-                    console.log("isIntersecting")
                     entry.target.classList.add('enter')
                     observer.unobserve(entry.target);
                 }

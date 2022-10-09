@@ -34,7 +34,7 @@ import Education from './Base/about/Education.vue'
 import Experience from './Base/about/Experience.vue'
 import Skill from './Base/about/Skill.vue'
 import Resume from './Base/about/Resume.vue'
-import Avatar from './Base/about/avatar.vue'
+import Avatar from './Base/about/Avatar.vue'
 
 
 const resume = ref('/resume.pdf')
