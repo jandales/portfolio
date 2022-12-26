@@ -26,7 +26,7 @@
 
    
 </template>
-
+8
 <script setup>
 import { ref } from 'vue';
 import AboutMe from './Base/about/AboutMe.vue'
