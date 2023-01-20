@@ -28,7 +28,7 @@ const loadProjects = () => {
         { 
             id: 1, name : 'E-commerce Site', 
             description : "E-commerce Website. A website that allows customer's to easily purchase their clothing needs. ",
-            image : '/img/store.png',
+            image : '../img/store.png',
             technologies : ['Laravel', 'Javascript'],
             repository : 'https://github.com/jandales/CodaStore', 
             link : 'https://codastore.herokuapp.com' },

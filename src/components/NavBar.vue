@@ -33,7 +33,7 @@
                     <h2 class="text-[2rem] leading-[3rem] md:text-[4rem]  font-black md:leading-[5rem]">Jesus Andales</h2>
                 </div>              
                 <div  v-scrollanimation class="block">
-                    <h3 class="text-[2rem] text-gray-500 leading-[3rem] md:text-[3rem] font-black  md:leading-[5rem]">I’m  a  web developer and Softwate developer</h3>
+                    <h3 class="text-[2rem] text-gray-500 leading-[3rem] md:text-[3rem] font-black  md:leading-[5rem]">I’m  a  web developer and Software developer</h3>
                 </div>  
                 <div  v-scrollanimation class="flex justify-start">
                     <a  href="mailto:jesusandales021993.com"  type="button" class="button  mt-8">Hire me</a>
