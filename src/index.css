@@ -63,7 +63,7 @@ body{
 }
 
 .page-wrapper{
-   @apply max-w-[1000px] min-h-screen  mx-auto;
+   @apply max-w-[1200px] min-h-screen  mx-auto;
 }
 
 .icon{

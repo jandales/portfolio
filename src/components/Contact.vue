@@ -1,7 +1,7 @@
 <template>
 
         <section id="contact" class="page-wrapper !min-h-[calc(100vh_-_5.5rem)]">
-            <h1 v-scrollanimation  class="block text-[3rem] font-black leading-[5rem] text-center py-10 lg:py-20">Get In Touch</h1>
+           <PageHeading :title="title" :styles="'pt-16'" />
             <div v-scrollanimation  class="flex flex-col items-center justify-center">
                 <ul>
                     <li v-scrollanimation  class="block text-center text-lg lg:text-2xl mb-8">jesusandales021993@gmail.com</li>
@@ -20,6 +20,8 @@
 </template>
 <script setup>
 import Footer from './Footer.vue'
+import PageHeading from './Base/PageHeading.vue';
+const title = 'Contact me'
 const  scrollToElement = (refName)  => {    
       const el = document.getElementById(refName);
        el.scrollIntoView({behavior : "smooth"})

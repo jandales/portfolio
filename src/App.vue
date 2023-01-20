@@ -8,6 +8,7 @@ import About from './components/About.vue'
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 import Projects from './components/Projects.vue';
+import Skill from './components/Skill.vue';
 
 
 import { onMounted } from 'vue'
@@ -31,6 +32,7 @@ const handleAnimation = () => {
         <NavBar/>
         <!-- <Hero/> -->
         <About/>
+        <Skill/>
         <Projects/>
         <Contact/>
         <Footer/>

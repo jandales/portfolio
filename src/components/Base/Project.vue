@@ -19,7 +19,7 @@ const isEven = (number) => {
                 {{ project.description}}
             </p>
             <ul class="flex flex-wrap gap-4 py-4  !justify-start" :class="{'lg:justify-end' : isEven()}">
-                <li v-for="technology in project.technologies">{{technology}}</li>
+                <li v-for="technology in project.technologies" :key="technology" >{{technology}}</li>
                 
             </ul>
             <ul class="flex  gap-4 !justify-start " :class="{'lg:justify-end' : isEven()}">

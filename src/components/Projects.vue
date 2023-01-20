@@ -1,6 +1,6 @@
 <template>
 <section id="projects" class="page-wrapper pt-12 pt- lg:pt-24">
-    <h1 class="block text-center text-[2rem] font-bold mb-10 lg:mb-20 text-[orange]">Personal Projects</h1>
+    <Heading :title="title" />
     <div class="w-full flex flex-wrap gap-16 px-4 md:px-0 lg:gap-4 ">    
             <Project div v-scrollanimation  
             v-for="project in projects" 
@@ -12,7 +12,10 @@
 </template>
 <script setup>
 import { ref, onMounted } from 'vue';
+
+import Heading from './Base/PageHeading.vue';
 import Project from './Base/Project.vue'
+const title = 'Projects'
 
 
 

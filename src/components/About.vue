@@ -1,7 +1,7 @@
 <template>
 <Transition name="list">
     <section id="about" class="page-wrapper !px-8 md:px-0">
-        <h2 v-scrollanimation   class="text-center text-[2rem] text-[orange] font-bold capitalize py-8">About Me</h2>
+        <Heading :title="title" :styles="'pt-16'" />
         <div class="flex flex-col lg:flex-row mt-8">
             <div class="w-full  lg:w-1/2 lg:p-0">
               
@@ -9,9 +9,7 @@
 
                 <Education/>
 
-                <Experience />
-
-                <Skill/>            
+                <Experience />                  
 
                 <Resume/>
                
@@ -28,14 +26,17 @@
 </template>
 8
 <script setup>
-import { ref } from 'vue';
+
 import AboutMe from './Base/about/AboutMe.vue'
 import Education from './Base/about/Education.vue'
 import Experience from './Base/about/Experience.vue'
-import Skill from './Base/about/Skill.vue'
 import Resume from './Base/about/Resume.vue'
 import Avatar from './Base/about/Avatar.vue'
+import Heading from './Base/PageHeading.vue'
 
 
-const resume = ref('/resume.pdf')
+
+const title = 'About me'
+const resume = '/resume.pdf'
+
 </script>
