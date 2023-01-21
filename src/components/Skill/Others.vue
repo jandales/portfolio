@@ -24,6 +24,18 @@ const skills = [
     name : 'Github',
     image : '/img/skills/github.svg',
   },
+  {
+    name : 'VSCode',
+    image : '/img/skills/vscode.svg',
+  },
+  {
+    name : 'Sublime Text',
+    image : '/img/skills/sublime-text.svg',
+  },
+  {
+    name : 'Postman',
+    image : '/img/skills/postman.svg',
+  }
 ];
   
 </script>
