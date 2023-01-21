@@ -5,7 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faFacebook, faInstagram, faDribbble, faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faDribbble, faGithub, faTwitter, faLinkedin, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons'
 
 import { faLocation, faMapLocationDot, faArrowUpRightFromSquare, faBars, faXmark, faCaretRight, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -28,7 +28,8 @@ library.add(
     faXmark,
     faCaretRight,
     faArrowUp,
-    faLinkedin
+    faLinkedin,
+    faFacebookMessenger
 
     )
 

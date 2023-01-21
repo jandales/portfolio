@@ -15,7 +15,7 @@ const isEven = (number) => {
         <div class="flex lg:gap-8" :class="{'flex-row-reverse' : isEven()}"> 
             <div class="w-full lg:w-1/2" >
                 <h2 @click="externalLink(project.link)" class="!text-left text-[2rem] font-bold mb-3 hover:text-[orange] cursor-pointer" :class="{'lg:text-right' : isEven(project.id)}">{{project.name}}</h2>
-            <p class="!text-left" :class="{'lg:text-right' : isEven()}">
+            <p class="text-lg !text-left" :class="{'lg:text-right' : isEven()}">
                 {{ project.description}}
             </p>
             <ul class="flex flex-wrap gap-4 py-4  !justify-start" :class="{'lg:justify-end' : isEven()}">

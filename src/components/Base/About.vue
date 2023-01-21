@@ -1,13 +1,25 @@
 <template>
-
+<Transition name="list">
     <section id="about" class="page-wrapper !px-8 md:px-0">
         <Heading :title="title" :styles="'pt-16'" />
-        <div class="max-w-2xl mx-auto">
-            <AboutMe/>
-            <Experience/>
-        </div>       
-    </section>
+        <div class="flex flex-col lg:flex-row mt-8">
+            <div class="w-full  lg:w-1/2 lg:p-0">
+              
+                <AboutMe/>
 
+                <Education/>
+
+                <Experience />                  
+
+                <Resume/>
+               
+            </div>
+            <div class="w-full pt-8 lg:pt-0 lg:w-1/2 flex justify-center ">
+                    <Avatar/>
+            </div>
+        </div>
+    </section>
+</Transition>
     
 
    
