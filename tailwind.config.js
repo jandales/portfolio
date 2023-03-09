@@ -6,18 +6,20 @@ module.exports = {
   ],
   theme: {
     screens:  {      
-      sm: '640px',
-   
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
 
-      md: '768px',
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
 
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
 
-      lg : '769px',
-    
-      xl: '1280px',
- 
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
+      '2xl': '1440px',
+      // => @media (min-width: 1536px) { ... }
      
     },
     
@@ -25,12 +27,17 @@ module.exports = {
       colors: {
         'regal-blue': 'red',
         'orange' : 'var(--orange)',
-        'dark' : '#27262b',
+        'dark': '#27262b',
+        'lightest-navy': '#233554',
+        'light-navy': '#112240',
+        'dark-navy': '#020c1b',
+        'navy': '#0a192f',
+       
       },
       backgroundColor : {
         'dark' : '#27262b',
         'orange' : 'var(--orange)',
-        'light-dark' : 'var(--light-dark)',    
+        'light-dark': 'var(--light-dark)',  
       },
     },
     

@@ -1,20 +1,43 @@
 <template>
-<section id="projects" class="page-wrapper pt-12 pt- lg:pt-24">
-    <Heading :title="title" />
-    <div class="w-full flex flex-wrap gap-16 px-4 md:px-0 lg:gap-4 ">    
-            <Project div v-scrollanimation  
+<section id="projects" class="page-wrapper">
+
+    <PageHeading :title="title" />
+
+    <!-- <div class="w-full flex flex-wrap gap-16 px-4 md:px-0 lg:gap-4 ">    
+        <Project 
+            div
+            v-scrollanimation  
             v-for="project in projects" 
             :project="project"
             :key="project.id" 
-            />
+        />
+    </div> -->
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3  ">
+        <Project 
+            v-for="(project, index) in projects" 
+            :key="index" 
+            :project="project"
+        />
     </div>
+
 </section>
 </template>
+
 <script setup>
+
 import { ref, onMounted } from 'vue';
 
-import Heading from './Base/PageHeading.vue';
-import Project from './Base/Project.vue'
+import PageHeading from './Base/PageHeading.vue';
+// import Project from './Base/Project.vue'
+import Project from './Project.vue';
+
+import EducatImage from '../assets/img/projects/educat.png'
+import TaskBoardImage from '../assets/img/projects/taskboard.png'
+import LendingImage from '../assets/img/projects/lending.png'
+import CodaStoreImage from  '../assets/img/projects/codastore.png'
+import RecipeAppImage from  '../assets/img/projects/recipe-app.png'
+
 const title = 'Projects'
 
 
@@ -28,7 +51,7 @@ const loadProjects = () => {
         { 
             id: 1, name : 'E-commerce Site', 
             description : "E-commerce Website. A website that allows customer's to easily purchase their clothing needs. ",
-            image : '../img/store.png',
+            image : CodaStoreImage,
             technologies : ['Laravel', 'Javascript'],
             repository : 'https://github.com/jandales/CodaStore', 
             link : 'https://codastore.herokuapp.com' },
@@ -36,7 +59,7 @@ const loadProjects = () => {
         { 
             id: 2, name : 'Lending Management System',  
             description : "The Lending Management System's main goal is to manage and monitor borrower loans.",
-            image : '/img/lending1.png', 
+            image : LendingImage, 
             technologies : ['Laravel', 'Vue js', 'TailwindCss'],
             repository : 'https://github.com/jandales/lending-app',
             link : 'https://etto-lending-app.herokuapp.com/' },
@@ -44,7 +67,7 @@ const loadProjects = () => {
         {   id: 3, name :  'Taskboard App' ,
             description : 'The Taskboard app is a clone of Taskboard for Google tasks.',
             technologies : ['Vue js', 'Vuex', 'TailwindCss'],
-            image : '/img/task1.png',
+            image : TaskBoardImage,
             repository : 'https://github.com/jandales/task-app',
             link : 'https://jandales.github.io/task-app'
         },
@@ -52,10 +75,20 @@ const loadProjects = () => {
         {   id: 4, name :  'Recipe App' ,
             description : 'Recipe app is sharing app, it allow user to share and save recipes from the app.',
             technologies : ['Node Js', 'Express','MongoDB', 'Vue js', 'Vuex', 'TailwindCss'],
-            image : '/img/recipe.png',
+            image : RecipeAppImage,
             repository : 'https://github.com/jandales/recipe-app',
             link : 'https://etto-recipe-app.herokuapp.com'
+        },
+
+        {
+            id: 5, name: 'Educat',
+            description: 'Recipe app is sharing app, it allow user to share and save recipes from the app.',
+            technologies: ['React', 'TailwindCss'],
+            image: EducatImage,
+            repository: 'https://github.com/jandales/educat',
+            link: 'https://jandales.github.io/educat'
         }
+
     ]
    
 }

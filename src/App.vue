@@ -11,9 +11,18 @@ import Projects from './components/Projects.vue';
 import Skill from './components/Skill.vue';
 
 
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
+import AOS from "aos";
 
+const loading = ref(true);
+
+onMounted(() => {
+    AOS.init({});
+    setTimeout(() => {
+        loading.value = false;
+    }, 5000);
+});
 
 
 const handleAnimation = () => {
@@ -27,15 +36,15 @@ const handleAnimation = () => {
 </script>
 
 <template>
-    <div class="container relative mx-auto bg-dark text-white">
+    <div class="container relative mx-auto bg-dark text-white px-8 md:px-0">
 
         <NavBar/>
-        <!-- <Hero/> -->
+        <Hero/> 
         <About/>
         <Skill/>
         <Projects/>
         <Contact/>
-        <Footer/>
+    
         
     </div> 
 </template>

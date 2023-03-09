@@ -5,7 +5,9 @@
     <SubHeading  :title="title" />
   </template>
   <template #content>
-      <div v-for="skill in skills" :key="skill.name" class="flex flex-col items-center">          
+      <div v-for="skill in skills" 
+        :key="skill.name" 
+        class="flex flex-col items-center">          
             <SkillImage  
               :image="skill.image"
               :alt="skill.name"

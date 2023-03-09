@@ -11,7 +11,7 @@ const isEven = (number) => {
 </script>
 
 <template>
-    <div v-scrollanimation   class="w-full bg-light-dark border-[dark] rounded-sm shadow-lg  p-4 lg:p-0 lg:mb-12 lg:bg-transparent  lg:border-0 lg:p-6 lg:shadow-none">        
+    <div v-scrollanimation   class="w-full bg-lightest-navy border-[dark] rounded-md shadow-lg  p-4 lg:p-0 lg:mb-12 lg:bg-transparent  lg:border-0  lg:shadow-none">        
         <div class="flex lg:gap-8" :class="{'flex-row-reverse' : isEven()}"> 
             <div class="w-full lg:w-1/2" >
                 <h2 @click="externalLink(project.link)" class="!text-left text-[2rem] font-bold mb-3 hover:text-[orange] cursor-pointer" :class="{'lg:text-right' : isEven(project.id)}">{{project.name}}</h2>
@@ -27,7 +27,7 @@ const isEven = (number) => {
                 <li v-if="project.link != null"><span @click="externalLink(project.link)" class="icon"  :href="project.link"><font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square"/></span></li>
             </ul>
         </div>
-        <div class="hidden lg:block w-1/2 shadow-lg">
+        <div class="hidden lg:block w-1/2  ">
             <img :src="project.image" class="w-full h-full  backdrop-blur-sm hover:backdrop-blur-lg transition-all duration-1000 ease-in-out " alt="">
         </div>
         </div>

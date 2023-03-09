@@ -1,10 +1,17 @@
 <template>
 
-    <section id="about" class="page-wrapper !px-8 md:px-0">
-        <Heading :title="title" :styles="'pt-16'" />
-        <div class="max-w-2xl mx-auto">
-            <AboutMe/>
-            <Experience/>
+    <section id="about" class="min-h-screen md:max-w-2xl md:mx-auto lg:max-w-6xl ">
+        <Heading :title="title" />
+        
+        <div class="flex flex-col  md:gap-8 lg:flex-row-reverse lg:gap-0">
+            <div class="w-full lg:w-1/2">
+                <AboutMe/>
+                <Experience/>
+            </div>
+            <div class=" flex flex-col mt-20 md:mt-10  lg:mt-0 lg:flex-row lg:w-1/2 md:items-center lg:justify-center lg:items-start">
+                     <Avatar />
+            </div>
+           
         </div>       
     </section>
 

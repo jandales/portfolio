@@ -67,10 +67,32 @@ body{
 }
 
 .page-wrapper{
-   @apply max-w-[1200px] min-h-screen  mx-auto;
+   @apply md:max-w-2xl lg:max-w-6xl min-h-screen  mx-auto;
 }
 
 .icon{
     @apply text-xl hover:text-[orange];
+}
+
+
+
+.h-screen-90 {
+    height: 90vh;
+}
+
+.h-screen-80 {
+    height: 80vh;
+}
+
+.h-screen-70 {
+    height: 70vh;
+}
+
+.h-screen-60 {
+    height: 60vh;
+}
+
+.h-screen-50 {
+    height: 50vh;
 }
 
