@@ -1,9 +1,9 @@
 <script setup>
-import ProjectImage from './Projects/ProjectImage.vue';
-import ProjectName from './Projects/ProjectName.vue';
-import ProjectDescription from './Projects/ProjectDescription.vue';
-import ProjectTech from './Projects/ProjectTech.vue';
-import ProjectLinks from './Projects/ProjectLinks.vue';
+import ProjectImage from '@/components/Projects/ProjectImage.vue';
+import ProjectName from '@/components/Projects/ProjectName.vue';
+import ProjectDescription from '@/components/Projects/ProjectDescription.vue';
+import ProjectTech from '@/components/Projects/ProjectTech.vue';
+import ProjectLinks from '@/components/Projects/ProjectLinks.vue';
 
 defineProps({
     project : Object,
@@ -12,7 +12,10 @@ defineProps({
 </script>
 
 <template>
-    <div class="w-full h-auto relative bg-lightest-navy rounded-md overflow-hidden hover:scale-105 hover:shadow-lg hover:transition-all hover:delay-100 hover:duration-200">
+    <div data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1500"
+        class="w-full h-auto relative bg-lightest-navy rounded-md overflow-hidden hover:scale-105 hover:shadow-lg hover:transition-all hover:delay-100 hover:duration-200">
 
         <div class="w-full">
             

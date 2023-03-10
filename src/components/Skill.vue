@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="page-wrapper pt-12 pt- lg:pt-24">
+  <section id="skills" class="page-wrapper mt-20">
     <Heading :title="title" />
     <div class="px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-3 md:gap-8">
       <Frontend />
@@ -17,6 +17,5 @@ import Backend from './Skill/Backend.vue'
 import Others from './Skill/Others.vue'
 
 const title = 'Skills'
-
 
 </script>

@@ -3,16 +3,6 @@
 
     <PageHeading :title="title" />
 
-    <!-- <div class="w-full flex flex-wrap gap-16 px-4 md:px-0 lg:gap-4 ">    
-        <Project 
-            div
-            v-scrollanimation  
-            v-for="project in projects" 
-            :project="project"
-            :key="project.id" 
-        />
-    </div> -->
-
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3  ">
         <Project 
             v-for="(project, index) in projects" 
@@ -28,19 +18,16 @@
 
 import { ref, onMounted } from 'vue';
 
-import PageHeading from './Base/PageHeading.vue';
-// import Project from './Base/Project.vue'
-import Project from './Project.vue';
+import PageHeading from '@/components/Base/PageHeading.vue';
+import Project from '@/components/Projects/Project.vue';
 
-import EducatImage from '../assets/img/projects/educat.png'
-import TaskBoardImage from '../assets/img/projects/taskboard.png'
-import LendingImage from '../assets/img/projects/lending.png'
-import CodaStoreImage from  '../assets/img/projects/codastore.png'
-import RecipeAppImage from  '../assets/img/projects/recipe-app.png'
+import EducatImage from '@/assets/img/projects/educat.png'
+import TaskBoardImage from '@/assets/img/projects/taskboard.png'
+import LendingImage from '@/assets/img/projects/lending.png'
+import CodaStoreImage from  '@/assets/img/projects/codastore.png'
+import RecipeAppImage from  '@/assets/img/projects/recipe-app.png'
 
 const title = 'Projects'
-
-
 
 const projects = ref([]);
 
