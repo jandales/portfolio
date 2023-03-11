@@ -1,5 +1,5 @@
 <template>
-      <section class="h-[calc(100vh_-_5rem)] mt-24 md:mt-28  md:h-screen-80  md:max-w-2xl md:mx-auto  lg:max-w-6xl lg:mt-24">
+      <section class="h-[calc(100vh_-_5rem)] -z-10 px-8 mt-24 md:mt-28  md:h-screen-80  md:max-w-2xl md:mx-auto  lg:max-w-6xl lg:mt-24 lg:px-0">
                 <div class="flex flex-col  items-center  md:justify-between md:flex-row md:gap-8"> 
                      <div data-aos="fade-up"
                          data-aos-delay="200"

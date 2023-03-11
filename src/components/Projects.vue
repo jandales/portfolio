@@ -1,5 +1,5 @@
 <template>
-<section id="projects" class="page-wrapper">
+<section id="projects" class="page-wrapper px-8 lg:px-0">
 
     <PageHeading :title="title" />
 

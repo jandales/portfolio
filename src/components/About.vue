@@ -1,6 +1,6 @@
 <template>
 
-    <section id="about" class="min-h-screen md:max-w-2xl md:mx-auto lg:max-w-6xl ">
+    <section id="about" class="min-h-screen px-8 md:max-w-2xl md:mx-auto lg:max-w-6xl lg:px-0 ">
         <Heading :title="title" />
         
         <div class="flex flex-col  md:gap-8 lg:flex-row-reverse lg:gap-0">

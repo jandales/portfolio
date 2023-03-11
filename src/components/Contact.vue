@@ -1,6 +1,6 @@
 <template>
 
-        <section id="contact" class="page-wrapper flex flex-col items-center justify-center mt-10">
+        <section id="contact" class="page-wrapper px-8 flex flex-col items-center justify-center mt-10  lg:px-0">
 
             <PageHeading 
                 :title="title"
