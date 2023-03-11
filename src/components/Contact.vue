@@ -11,7 +11,7 @@
                 data-aos-delay="200"
                 data-aos-duration="1500"
                 class="max-w-2xl mx-auto mb-4">
-                <label class="text-lg block text-center text-emerald-800 dark:text-white"  >Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</label>
+                <label class="text-lg block text-center text-emerald-800 dark:text-white"  > I’m currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</label>
             </div>
 
             <div data-aos="fade-up"
