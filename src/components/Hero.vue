@@ -1,7 +1,7 @@
 <template>
       <section class="h-[calc(100vh_-_5rem)] mt-24 md:mt-28  md:h-screen-80  md:max-w-2xl md:mx-auto  lg:max-w-6xl lg:mt-24">
                 <div class="flex flex-col  items-center  md:justify-between md:flex-row md:gap-8"> 
-                     <div data-aos="fade-right"
+                     <div data-aos="fade-up"
                          data-aos-delay="200"
                          data-aos-duration="1500"
                          class="hidden md:flex  h-[200px] lg:items-center lg:justify-center"> 
@@ -11,7 +11,7 @@
                     </div>                
                     <div class="w-full lg:max-w-3xl lg:mx-auto">
                         <h2
-                            data-aos="fade-left"
+                            data-aos="fade-up"
                             data-aos-delay="200"
                             data-aos-duration="1500"
                             class="text-2xl md:text-3xl pb-3 font-black f-black name duration-1000 text-emerald-800"
@@ -20,21 +20,21 @@
                         </h2>
                          <h1 
                             class="text-4xl md:text-5xl font-black pb-3 f-gray dark:text-white duration-1000"
-                            data-aos="fade-left"
+                            data-aos="fade-up"
                             data-aos-delay="300"
                             data-aos-duration="1500">
                             Jesus <strong class="text-emerald-400">Andales</strong>
                         </h1>
                         <h5
                             class=" text-4xl md:text-6xl  font-black pb-6 f-gray dark:text-white duration-1000"
-                            data-aos="fade-left"
+                            data-aos="fade-up"
                             data-aos-delay="400"
                             data-aos-duration="1500"
                         >
                            I <strong class="text-emerald-400">build</strong> things for the <strong class="text-emerald-400">web.</strong>
                         </h5>
 
-                       <ul  data-aos="fade-left"
+                       <ul  data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1500"
                             class="flex flex-row gap-4">
@@ -62,7 +62,7 @@
                         </li>          
                       </ul>
 
-                    <div data-aos="fade-left"
+                    <div data-aos="fade-up"
                          data-aos-delay="600"
                          data-aos-duration="1500" 
                          class="flex justify-start">
