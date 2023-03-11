@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faFacebook, faInstagram, faDribbble, faGithub, faTwitter, faLinkedin, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons'
 
-import { faLocation, faMapLocationDot, faArrowUpRightFromSquare, faBars, faXmark, faCaretRight, faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faLocation, faMapLocationDot, faArrowUpRightFromSquare, faBars, faXmark, faCaretRight, faArrowUp,  } from '@fortawesome/free-solid-svg-icons'
 
 
 

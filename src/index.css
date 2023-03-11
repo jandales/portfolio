@@ -54,16 +54,17 @@
     @apply font-mono;
   
 }
-body{
-    @apply bg-dark p-0;
+body {
+    @apply bg-teal-50 dark:bg-dark;
 }
 .nav-item {
-    @apply  text-2xl  text-white focus:text-[orange] hover:text-[orange]  md:mr-8 md:mb-0 lg:text-sm md:flex md:items-center cursor-pointer capitalize;
+    @apply  text-2xl  text-white focus:text-[orange] hover:text-[orange]  md:mr-8 md:mb-0 lg:text-sm md:flex md:items-center cursor-pointer capitalize dark:text-[orange];
     
 }
 
+
 .button {
-    @apply inline-block px-8 py-3 border-2 border-[orange] text-[orange] hover:bg-[orange] font-medium text-xs leading-tight uppercase rounded  hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out;
+    @apply inline-block px-8 py-3 text-white bg-emerald-500 font-bold   text-xl leading-tight tracking-wider uppercase rounded  hover:bg-emerald-600 focus:outline-none focus:ring-0 transition duration-150 ease-in-out;
 }
 
 .page-wrapper{
@@ -71,10 +72,12 @@ body{
 }
 
 .icon{
-    @apply text-xl hover:text-[orange];
+    @apply text-2xl hover:text-emerald-400 dark:hover:text-[orange];
 }
 
-
+h1, h2, h3, h4, h5, span, a, p {
+    @apply text-emerald-800 dark:text-white;
+}
 
 .h-screen-90 {
     height: 90vh;

@@ -4,14 +4,14 @@
 
             <PageHeading 
                 :title="title"
-                :styles="'mt-20 block text-center text-3xl font-bold mb-10 lg:mb-20 text-[orange] md:text-4xl'"
+                :styles="'mt-20 block text-center text-3xl font-bold mb-10 lg:mb-20 text-emerald-800 dark:text-white md:text-4xl'"
             />
 
             <div  data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="1500"
                 class="max-w-2xl mx-auto mb-4">
-                <label class="text-lg block text-center" >Im seeking for career apportunity to improve and  enchance my skills</label>
+                <label class="text-lg block text-center text-emerald-800 dark:text-white"  >Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</label>
             </div>
 
             <div data-aos="fade-up"
@@ -30,7 +30,7 @@
                 >
                     <a 
                         target="_blank" 
-                        class="w-8 h-8 hover:text-[orange]" 
+                        class="w-8 h-8 hover:text-emerald-400" 
                         href="https://github.com/jandales"
                     >
                         <font-awesome-icon class="w-8 h-8" icon="fa-brands fa-github"/>
@@ -41,7 +41,7 @@
                         data-aos-duration="1500">
                     <a 
                         target="_blank" 
-                        class="w-8 h-8 hover:text-[orange]"
+                        class="w-8 h-8 hover:text-emerald-400"
                         href="https://www.messenger.com/t/100001489436117"
                     >
                         <font-awesome-icon  class="w-8 h-8" icon="fa-brands fa-facebook-messenger" />
@@ -52,7 +52,7 @@
                         data-aos-duration="1500">
                     <a 
                         target="_blank" 
-                        class="w-8 h-8 hover:text-[orange]" 
+                        class="w-8 h-8 hover:text-emerald-400" 
                         href="https://www.linkedin.com/in/jesus-andales">
                     <font-awesome-icon class="w-8 h-8" icon="fa-brands fa-linkedin" />
                     </a>

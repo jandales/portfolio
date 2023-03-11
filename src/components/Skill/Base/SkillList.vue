@@ -1,6 +1,6 @@
 <template>
     <div   class="mb-8 md:mb-0 lg:mb-0" >
-        <div class="p-8  rounded-md bg-lightest-navy shadow-lg h-full">             
+        <div class="p-8  rounded-md bg-emerald-50 border border-emerald-100 dark:border-0 dark:bg-lightest-navy shadow-xl  h-full">             
             <SubHeading :title="title" />
             <div class="grid grid-cols-4 gap-8">                
                 <Skill 

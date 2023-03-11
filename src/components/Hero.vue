@@ -14,24 +14,24 @@
                             data-aos="fade-left"
                             data-aos-delay="200"
                             data-aos-duration="1500"
-                            class="text-2xl md:text-3xl pb-3 font-extrabold f-black name duration-1000"
+                            class="text-2xl md:text-3xl pb-3 font-black f-black name duration-1000 text-emerald-800"
                         >
-                           <strong class="text-[orange]">Hello,</strong> I am
+                           <strong class="text-emerald-400">Hello,</strong> I am
                         </h2>
                          <h1 
-                            class="text-4xl md:text-5xl font-extrabold pb-3 f-gray dark:text-white duration-1000"
+                            class="text-4xl md:text-5xl font-black pb-3 f-gray dark:text-white duration-1000"
                             data-aos="fade-left"
                             data-aos-delay="300"
                             data-aos-duration="1500">
-                            Jesus <strong class="text-[orange]">Andales</strong>
+                            Jesus <strong class="text-emerald-400">Andales</strong>
                         </h1>
                         <h5
-                            class=" text-4xl md:text-6xl font-extrabold pb-6 f-gray dark:text-white duration-1000"
+                            class=" text-4xl md:text-6xl  font-black pb-6 f-gray dark:text-white duration-1000"
                             data-aos="fade-left"
                             data-aos-delay="400"
                             data-aos-duration="1500"
                         >
-                           I <strong class="text-[orange]">build</strong> things for the <strong class="text-[orange]">web.</strong>
+                           I <strong class="text-emerald-400">build</strong> things for the <strong class="text-emerald-400">web.</strong>
                         </h5>
 
                        <ul  data-aos="fade-left"
@@ -41,22 +41,23 @@
 
                         <li>
                             <a class="text-2xl" href="https://github.com/jandales">
-                                <font-awesome-icon class="hover:text-[orange]" icon="fa-brands fa-github"/>
+                                <font-awesome-icon class="hover:text-emerald-400" icon="fa-brands fa-github"/>
+
                             </a>
                         </li>
                         <li>
                             <a class="text-2xl" href="https://www.facebook.com/jesus.andales">
-                                <font-awesome-icon class="hover:text-[orange]" icon="fa-brands fa-facebook"/>
+                                <font-awesome-icon class="hover:text-emerald-400" icon="fa-brands fa-facebook"/>
                             </a>
                         </li>
                         <li>
                             <a class="text-2xl" href="https://www.instagram.com/jesusandales">
-                                <font-awesome-icon class="hover:text-[orange]" icon="fa-brands fa-instagram"/>
+                                <font-awesome-icon class="hover:text-emerald-400" icon="fa-brands fa-instagram"/>
                             </a>
                         </li>
                         <li>
                             <a class="text-2xl" href="https://twitter.com/jandales_">
-                                <font-awesome-icon class="hover:text-[orange]" icon="fa-brands fa-twitter"/>
+                                <font-awesome-icon class="hover:text-emerald-400" icon="fa-brands fa-twitter"/>
                             </a>
                         </li>          
                       </ul>
@@ -76,7 +77,7 @@
 
                     </div>                     
                 </div>       
-            </section>
+     </section>
 </template>
 <script setup>
 

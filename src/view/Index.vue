@@ -22,7 +22,7 @@ onMounted(() => {
 </script>
 
 <template>
-     <div class="container relative mx-auto bg-dark text-white px-8 md:px-0">
+     <div class="container relative mx-auto   text-white px-8 md:px-0">
 
             <NavBar/>
             <Hero/> 

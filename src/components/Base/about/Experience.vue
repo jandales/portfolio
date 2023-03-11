@@ -3,7 +3,7 @@
         <h3 data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1500"
-            class="block py-4 font-bold tracking-wider text-center text-[orange] lg:text-left">EXPERIENCE</h3>
+            class="block py-4 font-black tracking-wider text-center text-emerald-800 dark:text-white lg:text-left">EXPERIENCE</h3>
         <div class="flex">
         <ul 
             data-aos="fade-up"
@@ -12,19 +12,19 @@
             v-for="experience in experiences"
             :key="experience.campany" 
             class="md:mx-auto w-full lg:mx-0">
-            <li class="flex items-center py-1">  
+            <li class="flex items-center py-1 text-emerald-800 dark:text-white">  
                 <span class="text-xs mr-3">
                     <font-awesome-icon icon="fa-solid fa-caret-right" />
                 </span>                 
                 {{experience.campany}}
             </li>
-            <li class="flex items-center py-1">  
+            <li class="flex items-center py-1 text-emerald-800 dark:text-white">  
                 <span class="text-xs mr-3">
                      <font-awesome-icon icon="fa-solid fa-caret-right" />
                 </span>                         
                 {{ experience.position }}   
             </li> 
-            <li class="flex items-center py-1"> 
+            <li class="flex items-center py-1 text-emerald-800 dark:text-white"> 
                 <span class="text-xs mr-3">
                     <font-awesome-icon icon="fa-solid fa-caret-right" />
                 </span>                          

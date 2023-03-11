@@ -15,7 +15,19 @@ defineProps({
     <div data-aos="fade-up"
         data-aos-delay="200"
         data-aos-duration="1500"
-        class="w-full h-auto relative bg-lightest-navy rounded-md overflow-hidden hover:scale-105 hover:shadow-lg hover:transition-all hover:delay-100 hover:duration-200">
+        class="w-full 
+            h-auto relative
+            bg-emerald-50
+            shadow-lg
+            rounded-md
+            overflow-hidden 
+            hover:translate-y-3 
+            hover:shadow-lg 
+            hover:transition-all 
+            hover:delay-100 
+            hover:duration-200 
+            cursor-pointer
+            dark:bg-lightest-navy ">
 
         <div class="w-full">
             

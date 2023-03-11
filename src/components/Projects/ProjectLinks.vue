@@ -1,7 +1,7 @@
 <template>
-    <ul class="flex gap-4 !justify-start ">
+    <ul class="flex gap-4  mt-4">
             <li>
-                <span @click="externalLink(repository)" class="icon">
+                <span @click="externalLink(repository)" class="icon ">
                     <font-awesome-icon  icon="fa-brands fa-github"/>
                 </span>
             </li>
