@@ -64,7 +64,7 @@ const loadProjects = () => {
             technologies : ['Node Js', 'Express','MongoDB', 'Vue js', 'Vuex', 'TailwindCss'],
             image : RecipeAppImage,
             repository : 'https://github.com/jandales/recipe-app',
-            link : 'https://etto-recipe-app.herokuapp.com'
+            link : 'https://recipe-app-7hga.onrender.com'
         },
 
         {
