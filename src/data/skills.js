@@ -13,10 +13,6 @@ const {
     BootstrapIcon,
     HtmlIcon,
     CssIcon,
-    GitHubIcon,
-    VscodeIcon,
-    SublimeTextIcon,
-    PostmanIcon,
 } = Image
 
 const backend = [
@@ -73,27 +69,7 @@ const frontend = [
     }
 ];
 
-const tools = [
-    {
-        name: 'Github',
-        image: GitHubIcon,
-    },
-    {
-        name: 'VSCode',
-        image: VscodeIcon,
-    },
-    {
-        name: 'Sublime Text',
-        image: SublimeTextIcon,
-    },
-    {
-        name: 'Postman',
-        image: PostmanIcon,
-    }
-];
-
 export const skills = {
     frontend,
     backend,
-    tools,
 }

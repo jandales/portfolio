@@ -140,7 +140,7 @@ import { reactive } from 'vue'
 import Footer from '@/components/Footer.vue'
 
 const title = 'Get In Touch'
-const emailAddress = 'jesusandales021993.com'
+const emailAddress = 'jesusandales021993@gmail.com'
 
 const form = reactive({
     name: '',

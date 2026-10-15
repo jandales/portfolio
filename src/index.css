@@ -56,12 +56,6 @@
 body {
     @apply p-0 m-0 bg-[#f7f8fc] text-slate-600 dark:bg-[#111827] dark:text-slate-300;
 }
-.nav-item {
-    @apply  text-2xl  text-white focus:text-[orange] hover:text-[orange]  md:mr-8 md:mb-0 lg:text-sm md:flex md:items-center cursor-pointer capitalize dark:text-[orange];
-    
-}
-
-
 .button {
     @apply inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700;
 }

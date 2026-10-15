@@ -8,7 +8,7 @@
                     data-aos-duration="1500"
                     class="flex justify-between items-center w-full ">
 
-                        <a  class="text-xl font-semibold tracking-tight cursor-pointer !text-violet-600 hover:!text-violet-500 dark:!text-violet-300" alt="">Jess</a>
+                        <a  class="text-xl font-semibold tracking-tight cursor-pointer !text-violet-600 hover:!text-violet-500 dark:!text-violet-300" alt="">Jesus Andales</a>
                         <div class="flex gap-4 md:hidden ">
                             <span @click="toggleDark()" class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" :class="` w-8 h-8 ${isDark ? 'text-white hover:text-violet-300' : 'text-slate-700 hover:text-violet-600'}`">
@@ -67,9 +67,8 @@
 
 <script setup>
 
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 import { useDark, useToggle } from '@vueuse/core'
-import Resume from '@/assets/resume.pdf'
 
 const isMenuOpen = ref(false);
 
