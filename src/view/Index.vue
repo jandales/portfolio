@@ -6,8 +6,6 @@ import Hero from '@/components/Hero.vue'
 import About from '@/components/About.vue'
 import Contact from '@/components/Contact.vue';
 import Projects from '@/components/Projects.vue';
-import Skill from '@/components/Skill.vue';
-
 import AOS from 'aos'
 
 const loading = ref(true);
@@ -29,7 +27,6 @@ onMounted(() => {
             <Hero/>
             </div>
             <About/>
-            <Skill/>
             <Projects/>
             <Contact/>
         </div> 

@@ -10,6 +10,7 @@ import LaravelIcon from '../assets/icons/laravel.svg'
 import CSharpIcon from '../assets/icons/c-sharp.svg'
 import NodeJsIcon from '../assets/icons/nodejs.svg'
 import MySqlIcon from '../assets/icons/mysql.svg'
+import SqlIcon from '../assets/icons/sql.svg'
 import MongoDbIcon from '../assets/icons/mongodb.svg'
 import GitHubIcon from '../assets/icons/github.svg'
 import VscodeIcon from '../assets/icons/vscode.svg'
@@ -31,6 +32,7 @@ export const Image = {
     CSharpIcon,
     NodeJsIcon,
     MySqlIcon,
+    SqlIcon,
     MongoDbIcon,
     GitHubIcon,
     VscodeIcon,

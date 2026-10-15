@@ -6,6 +6,7 @@
         <div class="flex-col  md:gap-8 lg:flex-row-reverse lg:gap-0">
             <div class="w-full">
                 <AboutMe/>
+                <Skill/>
                 <Experience/>
                 <!-- <Education /> -->
             </div>
@@ -23,6 +24,7 @@
 <script setup>
 
 import AboutMe from '@/components/Base/about/AboutMe.vue'
+import Skill from '@/components/Skill.vue'
 import Experience from '@/components/Base/about/Experience.vue'
 import Heading from '@/components/Base/PageHeading.vue'
 import Avatar from '@/components/Base/about/Avatar.vue'

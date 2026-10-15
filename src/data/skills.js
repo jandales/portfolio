@@ -1,11 +1,10 @@
 import { Image } from "./icons";
 
 const {
-    PHPIcon,
     LaravelIcon,
     CSharpIcon,
-    NodeJsIcon,
     MySqlIcon,
+    SqlIcon,
     MongoDbIcon,
     VueJSIcon,
     JavascriptIcon,
@@ -22,10 +21,6 @@ const {
 
 const backend = [
     {
-        name: 'PHP',
-        image: PHPIcon,
-    },
-    {
         name: 'Laravel',
         image: LaravelIcon,
     },
@@ -34,8 +29,8 @@ const backend = [
         image: CSharpIcon,
     },
     {
-        name: 'NodeJs',
-        image: NodeJsIcon,
+        name: 'SQL',
+        image: SqlIcon,
     },
     {
         name: 'MySql',
