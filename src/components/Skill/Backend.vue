@@ -1,7 +1,8 @@
 <template>
   <div data-aos="fade-up"
        data-aos-delay="300"
-       data-aos-duration="1500">
+       data-aos-duration="1500"
+       class="h-full">
   <SkillBaseLayout 
       :title="title" 
       :list="backend"

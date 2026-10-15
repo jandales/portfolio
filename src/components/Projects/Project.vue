@@ -15,25 +15,13 @@ defineProps({
     <div data-aos="fade-up"
         data-aos-delay="200"
         data-aos-duration="1500"
-        class="w-full 
-            h-auto relative
-            bg-emerald-50
-            shadow-lg
-            rounded-md
-            overflow-hidden 
-            hover:translate-y-3 
-            hover:shadow-lg 
-            hover:transition-all 
-            hover:delay-100 
-            hover:duration-200 
-            cursor-pointer
-            dark:bg-lightest-navy ">
+        class="relative h-auto w-full cursor-pointer overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md dark:border-white/10 dark:bg-white/5">
 
         <div class="w-full">
             
            <ProjectImage :image="project.image" />
 
-           <div class="px-8 py-2">
+           <div class="px-6 py-5">
 
                <ProjectName 
                     :name="project.name"

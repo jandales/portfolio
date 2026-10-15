@@ -51,11 +51,10 @@
 }
 
 #app{
-    @apply font-mono;
-  
+    @apply font-sans;
 }
 body {
-    @apply p-0 m-0 bg-teal-50 dark:bg-dark;
+    @apply p-0 m-0 bg-[#f7f8fc] text-slate-600 dark:bg-[#111827] dark:text-slate-300;
 }
 .nav-item {
     @apply  text-2xl  text-white focus:text-[orange] hover:text-[orange]  md:mr-8 md:mb-0 lg:text-sm md:flex md:items-center cursor-pointer capitalize dark:text-[orange];
@@ -64,19 +63,23 @@ body {
 
 
 .button {
-    @apply inline-block px-8 py-3 text-white bg-emerald-500 font-bold   text-xl leading-tight tracking-wider uppercase rounded  hover:bg-emerald-600 focus:outline-none focus:ring-0 transition duration-150 ease-in-out;
+    @apply inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700;
 }
 
 .page-wrapper{
-   @apply md:max-w-2xl lg:max-w-6xl min-h-screen  mx-auto;
+   @apply mx-auto w-full max-w-6xl px-6 py-20 md:px-8;
 }
 
 .icon{
-    @apply text-2xl hover:text-emerald-400;
+    @apply cursor-pointer text-xl text-slate-500 transition hover:text-violet-600 dark:text-slate-300 dark:hover:text-violet-300;
 }
 
-h1, h2, h3, h4, h5, span, a, p {
-    @apply text-emerald-800 dark:text-white;
+h1, h2, h3, h4, h5 {
+    @apply font-extrabold tracking-tight text-neutral-900 dark:text-white;
+}
+
+span, a, p, label {
+    @apply text-slate-600 dark:text-slate-300;
 }
 
 .h-screen-90 {

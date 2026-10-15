@@ -22,15 +22,16 @@ onMounted(() => {
 </script>
 
 <template>
-     <div class="container  mx-auto   text-white  md:px-0">
-
+     <div class="relative font-sans">
+            <div aria-hidden="true" class="fixed inset-0 -z-10 bg-[linear-gradient(115deg,#e4edfb_0%,#f7f8fc_40%,#e4f6ee_74%,#d7f3e4_100%)] dark:bg-[linear-gradient(115deg,#0f172a_0%,#111827_48%,#052e1b_100%)]"></div>
+            <div class="flex min-h-[100dvh] flex-col">
             <NavBar/>
-            <Hero/> 
+            <Hero/>
+            </div>
             <About/>
             <Skill/>
             <Projects/>
-            <Contact/>   
-        
+            <Contact/>
         </div> 
 </template>
 

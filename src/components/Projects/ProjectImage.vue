@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full hidden md:block">
-            <img :src="image" alt="" srcset="" />
+    <div class="aspect-video w-full overflow-hidden bg-slate-100 dark:bg-white/5">
+            <img :src="image" alt="" class="h-full w-full object-cover" />
      </div>
 </template>
 <script setup>

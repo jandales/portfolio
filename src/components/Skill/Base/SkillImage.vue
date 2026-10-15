@@ -1,6 +1,6 @@
 <template>
-    <div class="h-10 w-10">
-            <img :src="image" class="w-full h-full"
+    <div class="flex h-12 w-12 items-center justify-center">
+            <img :src="image" class="max-h-10 max-w-[2.5rem] object-contain transition duration-200 group-hover:scale-110"
             :alt="alt">
     </div>
 </template>

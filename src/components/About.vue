@@ -1,18 +1,18 @@
 <template>
 
-    <section id="about" class="min-h-screen px-8 md:max-w-2xl md:mx-auto lg:max-w-6xl lg:px-0 ">
+    <section id="about" class="mx-auto w-full max-w-6xl px-6 py-20 md:px-8">
         <Heading :title="title" />
         
-        <div class="flex flex-col  md:gap-8 lg:flex-row-reverse lg:gap-0">
-            <div class="w-full lg:w-1/2">
+        <div class="flex-col  md:gap-8 lg:flex-row-reverse lg:gap-0">
+            <div class="w-full">
                 <AboutMe/>
                 <Experience/>
-                <Education />
+                <!-- <Education /> -->
             </div>
-            <div class=" flex flex-col mt-20 md:mt-10  lg:mt-0 lg:flex-row lg:w-1/2 md:items-center lg:justify-center lg:items-start">
+            <!-- <div class=" flex flex-col mt-20 md:mt-10  lg:mt-0 lg:flex-row lg:w-1/2 md:items-center lg:justify-center lg:items-start">
                 <Avatar />
             </div>
-           
+            -->
         </div>       
     </section>
 
@@ -20,7 +20,6 @@
 
    
 </template>
-8
 <script setup>
 
 import AboutMe from '@/components/Base/about/AboutMe.vue'
