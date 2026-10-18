@@ -80,7 +80,7 @@ const toggleMenu  = () =>  {
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
-const navItems = ['about', 'skills','projects', 'contact' ]
+const navItems = ['about','projects', 'contact' ]
 
 const  scrollToElement = (refName)  => {    
     const el = document.getElementById(refName);
