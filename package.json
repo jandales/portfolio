@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "node scripts/deploy-github-pages.mjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
