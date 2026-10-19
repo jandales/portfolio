@@ -27,6 +27,7 @@ import LendingImage from '@/assets/img/projects/lending.png'
 import CodaStoreImage from  '@/assets/img/projects/codastore.png'
 import RecipeAppImage from '@/assets/img/projects/recipe-app.png'
 import NerdImage from '@/assets/img/projects/nerd.io.png'
+import FireApp from '@/assets/img/projects/FireApp.png'
 
 const title = 'Projects'
 
@@ -43,7 +44,7 @@ const loadProjects = () => {
             image : CodaStoreImage,
             technologies : ['Laravel', 'Javascript'],
             repository : 'https://github.com/jandales/CodaStore', 
-            link : 'https://codastore.herokuapp.com' },
+            link : '#' },
 
         { 
             id: 2,
@@ -52,7 +53,7 @@ const loadProjects = () => {
             image : LendingImage, 
             technologies : ['Laravel', 'Vue js', 'TailwindCss'],
             repository : 'https://github.com/jandales/lending-app',
-            link : 'https://etto-lending-app.herokuapp.com/' },
+            link : '#' },
 
         {
             id: 3,
@@ -83,7 +84,7 @@ const loadProjects = () => {
             repository: 'https://github.com/jandales/educat',
             link: 'https://jandales.github.io/educat'
         },
-         {
+        {
             id: 6,
             name: 'Nerd.io',
             description: 'Nerd.io is a Free Cloud storage ,file sharing service and fully file encryption.',
@@ -91,6 +92,15 @@ const loadProjects = () => {
             image: NerdImage,
             repository: 'https://github.com/jandales/nerd.io',
             link: 'https://jandales.github.io/nerd.io'
+        },
+        {
+            id: 7,
+            name: 'Fire Protection System',
+            description: 'Fire Protection App is a fire-station monitoring system. It helps a station receive, map, and respond to fire alerts from field devices in near real time.',
+            technologies: ['React', 'TailwindCss', 'Laravel', 'Inertia'],
+            image: FireApp,
+            repository: 'https://github.com/jandales/fireprotection-app',
+            link: '#'
         }
 
 

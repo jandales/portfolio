@@ -1,28 +1,29 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import Index from '@/view/Index.vue'
+import NotFound from '@/view/NotFound.vue'
 
-import { createRouter, createWebHistory, useRoute } from 'vue-router'
-const route = useRoute();
-const router = createRouter({ 
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Index,
+    },
+    {
+      path: '/not-found',
+      name: 'not-found',
+      component: NotFound,
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'catch-all',
+      component: NotFound,
+    },
+  ],
+  scrollBehavior() {
+    return { top: 0 }
+  },
+})
 
-    history : createWebHistory(),
-
-    routes : [
-                
-        {
-            path: '/github/:repository',
-            name : 'repository',
-            beforeEnter() { location.href = route.params.repository }
-        },
-
-        {
-            path: '/website/:link',
-            beforeEnter() { location.href = route.params.link }
-        }
-           
-       
-    ],
-
-   
-});
-
-export default router;
-
+export default router

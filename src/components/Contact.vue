@@ -76,8 +76,22 @@
                             />
                         </label>
 
-                        <button type="submit" class="button">
-                            Send message
+                        <p
+                            v-if="status.message"
+                            :class="[
+                                'rounded-lg px-4 py-3 text-sm font-medium',
+                                status.type === 'success'
+                                    ? 'bg-emerald-50 !text-emerald-700 dark:bg-emerald-500/10 dark:!text-emerald-300'
+                                    : status.type === 'info'
+                                      ? 'bg-blue-50 !text-blue-700 dark:bg-blue-500/10 dark:!text-blue-300'
+                                      : 'bg-red-50 !text-red-700 dark:bg-red-500/10 dark:!text-red-300',
+                            ]"
+                        >
+                            {{ status.message }}
+                        </p>
+
+                        <button type="submit" class="button disabled:cursor-not-allowed disabled:opacity-60" :disabled="isSending">
+                            {{ isSending ? 'Sending...' : 'Send message' }}
                         </button>
                     </form>
 
@@ -136,7 +150,7 @@
         </section>
 </template>
 <script setup>
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
 import Footer from '@/components/Footer.vue'
 
 const title = 'Get In Touch'
@@ -146,6 +160,12 @@ const form = reactive({
     name: '',
     email: '',
     subject: '',
+    message: '',
+})
+
+const isSending = ref(false)
+const status = reactive({
+    type: '',
     message: '',
 })
 
@@ -178,8 +198,65 @@ const socials = [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jesus-andales', icon: 'fa-brands fa-linkedin' },
 ]
 
-const sendMessage = () => {
-    const body = `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
-    window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(body)}`
+const resetStatus = () => {
+    status.type = ''
+    status.message = ''
+}
+
+const sendMessage = async () => {
+    resetStatus()
+    isSending.value = true
+
+    try {
+        const response = await fetch(`https://formsubmit.co/ajax/${emailAddress}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+            },
+            body: JSON.stringify({
+                name: form.name,
+                email: form.email,
+                subject: form.subject,
+                message: form.message,
+                _template: 'table',
+                _captcha: false,
+            }),
+        })
+
+        const result = await response.json()
+        const resultMessage = String(result.message || '')
+        const needsActivation = /activat/i.test(resultMessage)
+
+        if (needsActivation) {
+            status.type = 'info'
+            status.message = `Check ${emailAddress} for an email from FormSubmit, then click “Activate Form”. After that, submit again and messages will arrive in your inbox.`
+            return
+        }
+
+        if (!response.ok || result.success === 'false' || result.success === false) {
+            throw new Error(resultMessage || 'Unable to send your message right now.')
+        }
+
+        status.type = 'success'
+        status.message = 'Message sent. I’ll get back to you soon.'
+        form.name = ''
+        form.email = ''
+        form.subject = ''
+        form.message = ''
+    } catch (error) {
+        const errorMessage = error.message || 'Something went wrong. Please try again or email me directly.'
+
+        if (/activat/i.test(errorMessage)) {
+            status.type = 'info'
+            status.message = `Check ${emailAddress} for an email from FormSubmit, then click “Activate Form”. After that, submit again and messages will arrive in your inbox.`
+            return
+        }
+
+        status.type = 'error'
+        status.message = errorMessage
+    } finally {
+        isSending.value = false
+    }
 }
 </script>
