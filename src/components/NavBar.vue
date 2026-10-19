@@ -26,7 +26,16 @@
                                 <a class="text-sm font-medium cursor-pointer capitalize !text-slate-600 hover:!text-violet-600 dark:!text-slate-300 dark:hover:!text-violet-300">
                                     {{ item }}
                                 </a>
-                            </li>                                 
+                            </li>
+                            <li>
+                                <a
+                                    :href="Resume"
+                                    download="Jesus-Andales-Resume.pdf"
+                                    class="text-sm font-medium cursor-pointer capitalize !text-slate-600 hover:!text-violet-600 dark:!text-slate-300 dark:hover:!text-violet-300"
+                                >
+                                    Resume
+                                </a>
+                            </li>
                             <li>                         
                                 <span @click="toggleDark()">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" :class="` w-6 h-6 ${isDark ? 'text-white hover:text-violet-300' : 'text-slate-600 hover:text-violet-600'}`">
@@ -48,8 +57,17 @@
                                 <a class="cursor-pointer text-2xl font-semibold capitalize !text-slate-700 hover:!text-violet-600 dark:!text-white dark:hover:!text-violet-300">
                                     {{ item }}
                                 </a>
-                        </li> 
-                                    
+                        </li>
+                        <li>
+                            <a
+                                :href="Resume"
+                                download="Jesus-Andales-Resume.pdf"
+                                @click="isMenuOpen = false"
+                                class="cursor-pointer text-2xl font-semibold capitalize !text-slate-700 hover:!text-violet-600 dark:!text-white dark:hover:!text-violet-300"
+                            >
+                                Resume
+                            </a>
+                        </li>
                         <li>                         
                             <span @click="toggleDark()">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" :class="`w-8 h-8  ${isDark ? 'text-white hover:text-violet-300' : 'text-slate-700 hover:text-violet-600'}`">
@@ -69,6 +87,8 @@
 
 import { ref } from 'vue';
 import { useDark, useToggle } from '@vueuse/core'
+
+const Resume = '/resume.pdf'
 
 const isMenuOpen = ref(false);
 
