@@ -22,9 +22,9 @@
                        
 
                         <ul class="hidden md:flex items-center gap-8 pl-0 list-style-none">
-                            <li  v-for="item in navItems"  @click="scrollToElement(item)" :key="item">
+                            <li  v-for="item in navItems"  @click="scrollToElement(item.id)" :key="item.id">
                                 <a class="text-sm font-medium cursor-pointer capitalize !text-slate-600 hover:!text-violet-600 dark:!text-slate-300 dark:hover:!text-violet-300">
-                                    {{ item }}
+                                    {{ item.label }}
                                 </a>
                             </li>
                             <li>
@@ -52,10 +52,10 @@
                 <ul class="w-full flex flex-col items-center mt-10 gap-8 ">
                         <li  
                             v-for="item in navItems"  
-                            @click="scrollToElement(item)" 
-                            :key="item">
+                            @click="scrollToElement(item.id)" 
+                            :key="item.id">
                                 <a class="cursor-pointer text-2xl font-semibold capitalize !text-slate-700 hover:!text-violet-600 dark:!text-white dark:hover:!text-violet-300">
-                                    {{ item }}
+                                    {{ item.label }}
                                 </a>
                         </li>
                         <li>
@@ -100,7 +100,11 @@ const toggleMenu  = () =>  {
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
-const navItems = ['about','projects', 'contact' ]
+const navItems = [
+    { id: 'about', label: 'about' },
+    { id: 'projects', label: 'Personal Projects' },
+    { id: 'contact', label: 'contact' },
+]
 
 const  scrollToElement = (refName)  => {    
     const el = document.getElementById(refName);

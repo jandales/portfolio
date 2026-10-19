@@ -29,7 +29,7 @@ import RecipeAppImage from '@/assets/img/projects/recipe-app.png'
 import NerdImage from '@/assets/img/projects/nerd.io.png'
 import FireApp from '@/assets/img/projects/FireApp.png'
 
-const title = 'Projects'
+const title = 'Personal Projects'
 
 const projects = ref([]);
 
